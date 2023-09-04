@@ -7,19 +7,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] numbers = {1, 2, 3, 4, 5, 6};
+        int[] numbers = {1, 2, 3, 4, 5, 6}; //масив
+        int T =0;
 
-        for (int num : numbers) {
+        for (int a = 0; a < numbers.length; a++) {
 
-            count++;
+            count++; //лічільник
+            T += numbers[a]; //сумма наростаюча
 
-            System.out.println(count + ") Num is " + num +
+            System.out.println(count + ") Num is " + (a+1) +
+            ", sum is " + T);
 
-            ", sum is " );
+            sum += numbers[a]; //сумма масиву
 
-            sum += num;
         }
 
-        System.out.println("Sum of numbers is " + sum);
+        System.out.println("\n" + "Sum of numbers is " + sum);
     }
 }
